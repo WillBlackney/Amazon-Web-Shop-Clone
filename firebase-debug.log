@@ -1,0 +1,29 @@
+[debug] [2022-05-23T11:35:09.346Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:35:09.348Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\william.blackney\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:35:09.348Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:35:09.349Z] Platform:      win32
+[debug] [2022-05-23T11:35:09.349Z] Node Version:  v16.15.0
+[debug] [2022-05-23T11:35:09.349Z] Time:          Mon May 23 2022 13:35:09 GMT+0200 (Central European Summer Time)
+[debug] [2022-05-23T11:35:09.349Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:35:09.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:35:09.401Z] > authorizing via signed-in user (william.blackney@hotmail.com)
+[debug] [2022-05-23T11:35:09.401Z] [iam] checking project amazon-clone-wb for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:35:09.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone-wb:testIamPermissions [none]
+[debug] [2022-05-23T11:35:09.403Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone-wb:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:35:10.358Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone-wb:testIamPermissions 200
+[debug] [2022-05-23T11:35:10.358Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/amazon-clone-wb:testIamPermissions {}
+[debug] [2022-05-23T11:35:10.358Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project amazon-clone-wb:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-05-23T11:35:10.359Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/amazon-clone-wb [none]
+[debug] [2022-05-23T11:35:10.733Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/amazon-clone-wb 403
+[debug] [2022-05-23T11:35:10.734Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/amazon-clone-wb {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-05-23T11:35:10.734Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-05-23T11:35:10.838Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\william.blackney\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\william.blackney\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project amazon-clone-wb. Please make sure the project exists and your account has permission to access it.
