@@ -19,5 +19,8 @@ A full stack web project I made to replicate the look and functionality of Amazo
 - Working checkout and credit card payment system, powered by Stripe. 
 
 
-##### Screenshots
-![](DemoImages/Team_Builder_Screen.png)
+### Screenshots
+![](DemoImages/Home_1.png)
+![](DemoImages/Login_1.png)
+![](DemoImages/Basket_1.png)
+![](DemoImages/Checkout_1.png)
