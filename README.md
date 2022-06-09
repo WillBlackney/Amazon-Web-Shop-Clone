@@ -20,7 +20,15 @@ A full stack web project I made to replicate the look and functionality of Amazo
 
 
 ### Screenshots
+
+##### Home Page
 ![](DemoImages/Home_1.png)
+
+##### Login Page
 ![](DemoImages/Login_1.png)
+
+##### View Shopping Basket
 ![](DemoImages/Basket_1.png)
+
+##### Checkout Page
 ![](DemoImages/Checkout_1.png)
